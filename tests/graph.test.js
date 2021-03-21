@@ -1,9 +1,10 @@
-var graph    = require("../index")
+var {Graph}    = require("../index")
   , FBConfig = require("./config").facebook
   , vows     = require("vows")
   , events   = require("events")
   , assert   = require("assert");
 
+var graph = new Graph();
 
 var testUser1      = {}
   , appAccessToken = FBConfig.appId + "|" + FBConfig.appSecret
